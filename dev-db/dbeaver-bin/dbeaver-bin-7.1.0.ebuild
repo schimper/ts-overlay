@@ -15,7 +15,7 @@ IUSE=""
 DEPEND=">=dev-java/openjdk-8.252_p09:*"
 RDEPEND="${DEPEND}"
 BDEPEND=""
-S="${WORKDIR}/${PN}"
+S="${WORKDIR}/dbeaver"
 
 src_install() {
 	      local dir="/opt/${PN}-${PV}"
