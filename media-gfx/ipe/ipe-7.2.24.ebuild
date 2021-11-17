@@ -17,7 +17,7 @@ REQUIRED_USE="${LUA_REQUIRED_USE}"
 
 DEPEND="${LUA_DEPS}
         media-fonts/urw-fonts
-	media-gfx/libspiro
+	media-libs/libspiro
 	media-libs/freetype:2
 	media-libs/libjpeg-turbo
 	media-libs/libpng
@@ -45,5 +45,6 @@ src_install() {
 		IPEDOCDIR="${EPREFIX}/usr/share/doc/${PF}/html" \
 		INSTALL_ROOT="${ED}"
 	dodoc ../{news,readme}.txt
+	newicon -s 128 ${WORKDIR}/${P}/icons/ipe.iconset/icon_128x128.png ipe.png
 	make_desktop_entry ipe Ipe ipe
 }
