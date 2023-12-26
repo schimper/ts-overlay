@@ -1,0 +1,14 @@
+BDEPEND=virtual/pkgconfig
+DEFINED_PHASES=compile install
+DEPEND=media-fonts/urw-fonts media-libs/libspiro media-libs/freetype:2 media-libs/libjpeg-turbo media-libs/libpng sci-libs/gsl:= sys-libs/zlib x11-libs/cairo dev-qt/qtcore:5 dev-qt/qtgui:5 dev-lang/lua:5.3
+DESCRIPTION=A drawing editor for creating figures in PDF format.
+EAPI=8
+HOMEPAGE=https://ipe.otfried.org/
+INHERIT=desktop flag-o-matic
+KEYWORDS=amd64
+LICENSE=GPL-3
+RDEPEND=media-fonts/urw-fonts media-libs/libspiro media-libs/freetype:2 media-libs/libjpeg-turbo media-libs/libpng sci-libs/gsl:= sys-libs/zlib x11-libs/cairo dev-qt/qtcore:5 dev-qt/qtgui:5 dev-lang/lua:5.3 || ( app-text/texlive-core net-misc/curl )
+SLOT=0
+SRC_URI=https://github.com/otfried/ipe/releases/download/v7.2.24/ipe-7.2.24-src.tar.gz
+_eclasses_=desktop	021728fdc1b03b36357dbc89489e0f0d	toolchain-funcs	eed10cf5e5a06916e654d31f5a1925cc	multilib	c19072c3cd7ac5cb21de013f7e9832e0	flag-o-matic	78cf3cc2d5572fddf5e5e10c70f7c81a
+_md5_=fd4629e6ce31320bd0fe7bcfd093d662
